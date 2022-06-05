@@ -152,6 +152,30 @@
             </section>
             <hr class="m-0" />
 
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Projects</h2>
+                        <div class="row">
+        {% for item in projects %}
+
+                    <div class="card" style="width: 18rem;">
+                      <img class="card-img-top" src="{{ item.image.url }}" alt="Card image cap">
+                      <div class="card-body">
+                        <h5 class="card-title">{{ item.title }}</h5>
+                        <p class="card-text">{{ item.overview }}</p>
+                          {% if item.url %}
+                        <a href="{{ item.url }}" class="btn btn-primary">Check website</a>
+                          {% endif %}
+                      </div>
+
+                    </div>
+
+        {% endfor %}
+                    </div>
+                </div>
+            </section>
+
 
         </div>
         <!-- Bootstrap core JS-->
