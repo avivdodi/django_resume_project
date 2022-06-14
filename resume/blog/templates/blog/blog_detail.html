@@ -40,12 +40,10 @@
         </nav>
 
             <!-- Blog-->
-            <section class="resume-section" id="blogs">
+            <section class="resume-section" id="blog">
                 <div class="resume-section-content">
-                    {% for blog in blogs %}
-                    <a href="{{blog.get_absolute_url}}"><h2 class="mb-2">{{blog.title}}</h2></a>
+                    <h2 class="mb-2">{{blog.title}}</h2>
                     <p>{{blog.description}}</p>
                     <p class="mb-0">{{blog.date}}</p><br><br>
-                    {% endfor %}
                 </div>
             </section>
