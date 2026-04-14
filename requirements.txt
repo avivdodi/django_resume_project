@@ -1,2 +1,2 @@
 django
-pillow==12.1.1
+pillow~=12.1
